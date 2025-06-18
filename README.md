@@ -10,9 +10,9 @@ Users can customize quizzes by selecting the subject, difficulty level, and numb
 - Musawer Jalal
 
 ## Running the Program
-make clean
-make
-./SmartMentor
+- make clean
+- make
+- ./SmartMentor
 
 License
 [MIT](https://choosealicense.com/licenses/mit/)
