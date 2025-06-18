@@ -14,5 +14,5 @@ Users can customize quizzes by selecting the subject, difficulty level, and numb
 - make
 - ./SmartMentor
 
-License
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
