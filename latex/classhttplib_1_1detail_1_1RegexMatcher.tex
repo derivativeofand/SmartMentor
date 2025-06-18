@@ -1,0 +1,51 @@
+\doxysection{httplib\+::detail\+::Regex\+Matcher Class Reference}
+\hypertarget{classhttplib_1_1detail_1_1RegexMatcher}{}\label{classhttplib_1_1detail_1_1RegexMatcher}\index{httplib::detail::RegexMatcher@{httplib::detail::RegexMatcher}}
+
+
+{\ttfamily \#include $<$ollama.\+hpp$>$}
+
+
+
+Inheritance diagram for httplib\+::detail\+::Regex\+Matcher\+:
+% FIG 0
+
+
+Collaboration diagram for httplib\+::detail\+::Regex\+Matcher\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1RegexMatcher_afb07c1bd6712a47bdef65fe392ed043d}\label{classhttplib_1_1detail_1_1RegexMatcher_afb07c1bd6712a47bdef65fe392ed043d} 
+{\bfseries Regex\+Matcher} (const std\+::string \&pattern)
+\item 
+bool \mbox{\hyperlink{classhttplib_1_1detail_1_1RegexMatcher_aef3f65a7264ead1b47b310d214f16666}{match}} (\mbox{\hyperlink{structhttplib_1_1Request}{Request}} \&request) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1RegexMatcher_a272b70b0144daad0da65332fc7ac9e3c}\label{classhttplib_1_1detail_1_1RegexMatcher_a272b70b0144daad0da65332fc7ac9e3c} 
+std\+::regex {\bfseries regex\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs std\+::regex\+\_\+match on request path and stores the result in Request\+::matches
+
+Note that regex match is performed directly on the whole request. This means that wildcard patterns may match multiple path segments with /\+: "{}/begin/(.\texorpdfstring{$\ast$}{*})/end"{} will match both "{}/begin/middle/end"{} and "{}/begin/1/2/end"{}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classhttplib_1_1detail_1_1RegexMatcher_aef3f65a7264ead1b47b310d214f16666}\label{classhttplib_1_1detail_1_1RegexMatcher_aef3f65a7264ead1b47b310d214f16666} 
+\index{httplib::detail::RegexMatcher@{httplib::detail::RegexMatcher}!match@{match}}
+\index{match@{match}!httplib::detail::RegexMatcher@{httplib::detail::RegexMatcher}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily bool httplib\+::detail\+::\+Regex\+Matcher\+::match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structhttplib_1_1Request}{Request}} \&}]{request }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1detail_1_1MatcherBase}{httplib\+::detail\+::\+Matcher\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ollama.\+hpp\end{DoxyCompactItemize}

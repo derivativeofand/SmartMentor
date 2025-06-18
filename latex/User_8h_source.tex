@@ -1,0 +1,36 @@
+\doxysection{User.\+h}
+\hypertarget{User_8h_source}{}\label{User_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ USER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ USER\_H}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUser}{User}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classUser}{User}}(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00018\ \ \ \ \ map<string,\ string>\ *\mbox{\hyperlink{classUser_a04fd4cac1189c003704db15f6f6da277}{getStats}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_adb316ac38d5f62a967686e7b736a0469}{getName}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a10cd375d1fd3c784e459af0f8d9f8852}{addEXP}}(\textcolor{keywordtype}{double}\ exp);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUser_a123a8c9e05dc1d86a4469fb2d4e127eb}{getEXP}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUser_af335ecb5afa53559cca5f42d17aeed66}{getLevel}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUser_a6bebac9cf3e91406a6362afa0bfa866b}{getEXPThreshold}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a825cd0c8f5df716216c50ea274bd32d9}{getMetals}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a1924a7eb8f14c198e607a16ee99384ea}{updateStats}}();}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ map<string,\ string>\ stats;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ metals;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ exp;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ expThreshold;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ level;}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

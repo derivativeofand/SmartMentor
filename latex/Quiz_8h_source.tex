@@ -1,0 +1,29 @@
+\doxysection{Quiz.\+h}
+\hypertarget{Quiz_8h_source}{}\label{Quiz_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Question.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}User.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ QUIZ\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ QUIZ\_H}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classQuiz}{Quiz}}}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classQuiz}{Quiz}}(vector<Question*>\ questions,\ \mbox{\hyperlink{classUser}{User}}\ *user);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ vector<Question*>\ \ \mbox{\hyperlink{classQuiz_a4e809c57e698535ff01ea47d2c93a8ef}{getQuestions}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classQuiz_a3d5a7c578e2af82d11484f93884f8c6d}{submitAnswer}}(\textcolor{keywordtype}{int}\ questionIdx,\ \textcolor{keywordtype}{int}\ answerIdx);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classQuiz_a0a95d0deec7595f6fa70608542d36d7f}{updateUserStats}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ vector<Question*>\ questions;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ vector<Question*>\ questionsCorrect;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser}{User}}\ *user;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ score;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ answered;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ answeredCorrectly;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ streak;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ maxStreak;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ expGained;}
+\DoxyCodeLine{00027\ \ \ \ \ \};}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

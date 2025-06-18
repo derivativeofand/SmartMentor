@@ -1,0 +1,150 @@
+\doxysection{httplib\+::detail\+::Socket\+Stream Class Reference}
+\hypertarget{classhttplib_1_1detail_1_1SocketStream}{}\label{classhttplib_1_1detail_1_1SocketStream}\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+
+
+Inheritance diagram for httplib\+::detail\+::Socket\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for httplib\+::detail\+::Socket\+Stream\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a47ee2245a68f78d1331c429d1b8cff14}\label{classhttplib_1_1detail_1_1SocketStream_a47ee2245a68f78d1331c429d1b8cff14} 
+{\bfseries Socket\+Stream} (socket\+\_\+t sock, time\+\_\+t read\+\_\+timeout\+\_\+sec, time\+\_\+t read\+\_\+timeout\+\_\+usec, time\+\_\+t write\+\_\+timeout\+\_\+sec, time\+\_\+t write\+\_\+timeout\+\_\+usec)
+\item 
+bool \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a54ef15b31ba398e33086574d412fb316}{is\+\_\+readable}} () const override
+\item 
+bool \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_aa5bf41c972f307030f34de1c7dbb25d9}{is\+\_\+writable}} () const override
+\item 
+ssize\+\_\+t \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a7fff1278536273efeb9c0e9adad57d62}{read}} (char \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t size) override
+\item 
+ssize\+\_\+t \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a5758d225d89517db2a637fac308f041a}{write}} (const char \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t size) override
+\item 
+void \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a10edcbf718672c3be447eaffa5bb25df}{get\+\_\+remote\+\_\+ip\+\_\+and\+\_\+port}} (std\+::string \&ip, int \&port) const override
+\item 
+void \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a79225a858c34f7084e2db0015e55945a}{get\+\_\+local\+\_\+ip\+\_\+and\+\_\+port}} (std\+::string \&ip, int \&port) const override
+\item 
+socket\+\_\+t \mbox{\hyperlink{classhttplib_1_1detail_1_1SocketStream_a1de284778b5558fbd7be59632bbaa85e}{socket}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\ssize\+\_\+t {\bfseries write\+\_\+format} (const char \texorpdfstring{$\ast$}{*}fmt, const Args \&...args)
+\item 
+ssize\+\_\+t {\bfseries write} (const char \texorpdfstring{$\ast$}{*}ptr)
+\item 
+ssize\+\_\+t {\bfseries write} (const std\+::string \&s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_aab1e9c555082de67f646cb3c303d6f91}\label{classhttplib_1_1detail_1_1SocketStream_aab1e9c555082de67f646cb3c303d6f91} 
+socket\+\_\+t {\bfseries sock\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a8d3d29cab4b58080b478284260506982}\label{classhttplib_1_1detail_1_1SocketStream_a8d3d29cab4b58080b478284260506982} 
+time\+\_\+t {\bfseries read\+\_\+timeout\+\_\+sec\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a896b2836d8c0494717d673c20445bb21}\label{classhttplib_1_1detail_1_1SocketStream_a896b2836d8c0494717d673c20445bb21} 
+time\+\_\+t {\bfseries read\+\_\+timeout\+\_\+usec\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a1d8bafc8e2c27f10e31978388b8178f8}\label{classhttplib_1_1detail_1_1SocketStream_a1d8bafc8e2c27f10e31978388b8178f8} 
+time\+\_\+t {\bfseries write\+\_\+timeout\+\_\+sec\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a8d2381d5b4b2421a96c5a9ea84c80ae0}\label{classhttplib_1_1detail_1_1SocketStream_a8d2381d5b4b2421a96c5a9ea84c80ae0} 
+time\+\_\+t {\bfseries write\+\_\+timeout\+\_\+usec\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_ae8c21953eaa59b1d232c8ef955ae39dc}\label{classhttplib_1_1detail_1_1SocketStream_ae8c21953eaa59b1d232c8ef955ae39dc} 
+std\+::vector$<$ char $>$ {\bfseries read\+\_\+buff\+\_\+}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a6a2476cae3217cf91f3ce921ec2af154}\label{classhttplib_1_1detail_1_1SocketStream_a6a2476cae3217cf91f3ce921ec2af154} 
+size\+\_\+t {\bfseries read\+\_\+buff\+\_\+off\+\_\+} = 0
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a6e87b6321db2c90e9816742d57c56c46}\label{classhttplib_1_1detail_1_1SocketStream_a6e87b6321db2c90e9816742d57c56c46} 
+size\+\_\+t {\bfseries read\+\_\+buff\+\_\+content\+\_\+size\+\_\+} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a84c87f50baf05b194d96f88daedd4e14}\label{classhttplib_1_1detail_1_1SocketStream_a84c87f50baf05b194d96f88daedd4e14} 
+static const size\+\_\+t {\bfseries read\+\_\+buff\+\_\+size\+\_\+} = 1024l \texorpdfstring{$\ast$}{*} 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a79225a858c34f7084e2db0015e55945a}\label{classhttplib_1_1detail_1_1SocketStream_a79225a858c34f7084e2db0015e55945a} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!get\_local\_ip\_and\_port@{get\_local\_ip\_and\_port}}
+\index{get\_local\_ip\_and\_port@{get\_local\_ip\_and\_port}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{get\_local\_ip\_and\_port()}{get\_local\_ip\_and\_port()}}
+{\footnotesize\ttfamily void httplib\+::detail\+::\+Socket\+Stream\+::get\+\_\+local\+\_\+ip\+\_\+and\+\_\+port (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ip,  }\item[{int \&}]{port }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a10edcbf718672c3be447eaffa5bb25df}\label{classhttplib_1_1detail_1_1SocketStream_a10edcbf718672c3be447eaffa5bb25df} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!get\_remote\_ip\_and\_port@{get\_remote\_ip\_and\_port}}
+\index{get\_remote\_ip\_and\_port@{get\_remote\_ip\_and\_port}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{get\_remote\_ip\_and\_port()}{get\_remote\_ip\_and\_port()}}
+{\footnotesize\ttfamily void httplib\+::detail\+::\+Socket\+Stream\+::get\+\_\+remote\+\_\+ip\+\_\+and\+\_\+port (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ip,  }\item[{int \&}]{port }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a54ef15b31ba398e33086574d412fb316}\label{classhttplib_1_1detail_1_1SocketStream_a54ef15b31ba398e33086574d412fb316} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!is\_readable@{is\_readable}}
+\index{is\_readable@{is\_readable}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{is\_readable()}{is\_readable()}}
+{\footnotesize\ttfamily bool httplib\+::detail\+::\+Socket\+Stream\+::is\+\_\+readable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_aa5bf41c972f307030f34de1c7dbb25d9}\label{classhttplib_1_1detail_1_1SocketStream_aa5bf41c972f307030f34de1c7dbb25d9} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!is\_writable@{is\_writable}}
+\index{is\_writable@{is\_writable}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{is\_writable()}{is\_writable()}}
+{\footnotesize\ttfamily bool httplib\+::detail\+::\+Socket\+Stream\+::is\+\_\+writable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a7fff1278536273efeb9c0e9adad57d62}\label{classhttplib_1_1detail_1_1SocketStream_a7fff1278536273efeb9c0e9adad57d62} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!read@{read}}
+\index{read@{read}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily ssize\+\_\+t httplib\+::detail\+::\+Socket\+Stream\+::read (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ptr,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a1de284778b5558fbd7be59632bbaa85e}\label{classhttplib_1_1detail_1_1SocketStream_a1de284778b5558fbd7be59632bbaa85e} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!socket@{socket}}
+\index{socket@{socket}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily socket\+\_\+t httplib\+::detail\+::\+Socket\+Stream\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+\Hypertarget{classhttplib_1_1detail_1_1SocketStream_a5758d225d89517db2a637fac308f041a}\label{classhttplib_1_1detail_1_1SocketStream_a5758d225d89517db2a637fac308f041a} 
+\index{httplib::detail::SocketStream@{httplib::detail::SocketStream}!write@{write}}
+\index{write@{write}!httplib::detail::SocketStream@{httplib::detail::SocketStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily ssize\+\_\+t httplib\+::detail\+::\+Socket\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ptr,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classhttplib_1_1Stream}{httplib\+::\+Stream}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ollama.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\doxysection{Question Class Reference}
+\hypertarget{classQuestion}{}\label{classQuestion}\index{Question@{Question}}
+
+
+Class containing question object which represents a single question in a quiz.  
+
+
+
+
+{\ttfamily \#include $<$Question.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQuestion_a4b112a294e34c65dacaf8ede3f08a9e8}{Question}} (string question\+Text, vector$<$ string $>$ answers, int correct\+Answer\+Idx, int difficulty, string category)
+\begin{DoxyCompactList}\small\item\em \doxylink{classQuestion}{Question} object constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQuestion_a02f67afa0cd2cb1431fe6c3fc53a09d2}{submit\+Answer}} (int answer\+Idx)
+\begin{DoxyCompactList}\small\item\em Checks if given answer indes is correct. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classQuestion_a5b5c1c3956826b79865ee1cf678e6d0d}{get\+Question\+Str}} ()
+\begin{DoxyCompactList}\small\item\em Getter for question text. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classQuestion_aab1a344c5c09746ab30dcb263bfdc489}{get\+Answers}} ()
+\begin{DoxyCompactList}\small\item\em Getter for answers vecotr. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQuestion_a08d0fb4b8b54ae30642ed24aa09039e7}{get\+Correct\+Answer\+Idx}} ()
+\begin{DoxyCompactList}\small\item\em Getter for correct answer index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQuestion_a75e718432c02cecd50c662b3be82ec83}{get\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Getter for difficulty. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classQuestion_a068ab9198e1227e8b831b70d368fa1d8}{get\+Category}} ()
+\begin{DoxyCompactList}\small\item\em Getter for question subject. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classQuestion_ac658f83af85b937a4d894399b1b92c08}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classQuestion_aaf4c708a2caf77066c6ea96bfe7e2729}\label{classQuestion_aaf4c708a2caf77066c6ea96bfe7e2729} 
+string {\bfseries question\+Text}
+\item 
+\Hypertarget{classQuestion_ac4a82caca1ea7504453ba951acc492e3}\label{classQuestion_ac4a82caca1ea7504453ba951acc492e3} 
+vector$<$ string $>$ {\bfseries answers}
+\item 
+\Hypertarget{classQuestion_ab0be79e28139c5f06ebda302aad9156b}\label{classQuestion_ab0be79e28139c5f06ebda302aad9156b} 
+int {\bfseries correct\+Answer\+Idx}
+\item 
+\Hypertarget{classQuestion_a94805f56e31cd92a81a32d9a2bc2f21d}\label{classQuestion_a94805f56e31cd92a81a32d9a2bc2f21d} 
+int {\bfseries difficulty}
+\item 
+\Hypertarget{classQuestion_aae943d12c05eba410dc2391bbf58b4d5}\label{classQuestion_aae943d12c05eba410dc2391bbf58b4d5} 
+string {\bfseries category}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing question object which represents a single question in a quiz. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classQuestion_a4b112a294e34c65dacaf8ede3f08a9e8}\label{classQuestion_a4b112a294e34c65dacaf8ede3f08a9e8} 
+\index{Question@{Question}!Question@{Question}}
+\index{Question@{Question}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{Question()}{Question()}}
+{\footnotesize\ttfamily Question\+::\+Question (\begin{DoxyParamCaption}\item[{string}]{question\+Text,  }\item[{vector$<$ string $>$}]{answers,  }\item[{int}]{correct\+Answer\+Idx,  }\item[{int}]{difficulty,  }\item[{string}]{category }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classQuestion}{Question} object constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em question\+Text} & string representing just the question being asked. \\
+\hline
+{\em answers} & vector of all the asnwers to the MCQ. \\
+\hline
+{\em correct\+Answer\+Idx} & index of the correct asnwer in the asnwers vector. \\
+\hline
+{\em category} & subject of the question. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classQuestion_aab1a344c5c09746ab30dcb263bfdc489}\label{classQuestion_aab1a344c5c09746ab30dcb263bfdc489} 
+\index{Question@{Question}!getAnswers@{getAnswers}}
+\index{getAnswers@{getAnswers}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getAnswers()}{getAnswers()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Question\+::get\+Answers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for answers vecotr. 
+
+\begin{DoxyReturn}{Returns}
+answers vector. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_a068ab9198e1227e8b831b70d368fa1d8}\label{classQuestion_a068ab9198e1227e8b831b70d368fa1d8} 
+\index{Question@{Question}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily string Question\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for question subject. 
+
+\begin{DoxyReturn}{Returns}
+subject. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_a08d0fb4b8b54ae30642ed24aa09039e7}\label{classQuestion_a08d0fb4b8b54ae30642ed24aa09039e7} 
+\index{Question@{Question}!getCorrectAnswerIdx@{getCorrectAnswerIdx}}
+\index{getCorrectAnswerIdx@{getCorrectAnswerIdx}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getCorrectAnswerIdx()}{getCorrectAnswerIdx()}}
+{\footnotesize\ttfamily int Question\+::get\+Correct\+Answer\+Idx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for correct answer index. 
+
+\begin{DoxyReturn}{Returns}
+correct answer index. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_a75e718432c02cecd50c662b3be82ec83}\label{classQuestion_a75e718432c02cecd50c662b3be82ec83} 
+\index{Question@{Question}!getDifficulty@{getDifficulty}}
+\index{getDifficulty@{getDifficulty}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getDifficulty()}{getDifficulty()}}
+{\footnotesize\ttfamily int Question\+::get\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for difficulty. 
+
+\begin{DoxyReturn}{Returns}
+difficulty. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_a5b5c1c3956826b79865ee1cf678e6d0d}\label{classQuestion_a5b5c1c3956826b79865ee1cf678e6d0d} 
+\index{Question@{Question}!getQuestionStr@{getQuestionStr}}
+\index{getQuestionStr@{getQuestionStr}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getQuestionStr()}{getQuestionStr()}}
+{\footnotesize\ttfamily string Question\+::get\+Question\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for question text. 
+
+\begin{DoxyReturn}{Returns}
+string question text. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_a02f67afa0cd2cb1431fe6c3fc53a09d2}\label{classQuestion_a02f67afa0cd2cb1431fe6c3fc53a09d2} 
+\index{Question@{Question}!submitAnswer@{submitAnswer}}
+\index{submitAnswer@{submitAnswer}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{submitAnswer()}{submitAnswer()}}
+{\footnotesize\ttfamily bool Question\+::submit\+Answer (\begin{DoxyParamCaption}\item[{int}]{answer\+Idx }\end{DoxyParamCaption})}
+
+
+
+Checks if given answer indes is correct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em answer\+Idx} & asnwer inxed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the correct asnwer is at the given index false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classQuestion_ac658f83af85b937a4d894399b1b92c08}\label{classQuestion_ac658f83af85b937a4d894399b1b92c08} 
+\index{Question@{Question}!toString@{toString}}
+\index{toString@{toString}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Question\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classQuestion}{Question} in the form of a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Question.\+h\item 
+Question.\+cpp\end{DoxyCompactItemize}

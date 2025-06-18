@@ -1,0 +1,177 @@
+\doxysection{User Class Reference}
+\hypertarget{classUser}{}\label{classUser}\index{User@{User}}
+
+
+Class containing user object which holds a user\textquotesingle{}s statistics.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_ab4d18a829f31eae091669ac36782a396}{User}} (string name)
+\begin{DoxyCompactList}\small\item\em \doxylink{classUser}{User} object constructor. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUser_a04fd4cac1189c003704db15f6f6da277}{get\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Getter for stats map. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_adb316ac38d5f62a967686e7b736a0469}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter for user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a10cd375d1fd3c784e459af0f8d9f8852}{add\+EXP}} (double exp)
+\begin{DoxyCompactList}\small\item\em Increments the user\textquotesingle{}s experince by the ammount and levels them up if they are above the threashold for a level up. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a123a8c9e05dc1d86a4469fb2d4e127eb}{get\+EXP}} ()
+\begin{DoxyCompactList}\small\item\em Getter for exp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_af335ecb5afa53559cca5f42d17aeed66}{get\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Getter for user\textquotesingle{}s level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a6bebac9cf3e91406a6362afa0bfa866b}{get\+EXPThreshold}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the exp required for the next level. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a825cd0c8f5df716216c50ea274bd32d9}{get\+Metals}} ()
+\begin{DoxyCompactList}\small\item\em Getter for user\textquotesingle{}s metals. \end{DoxyCompactList}\item 
+\Hypertarget{classUser_a1924a7eb8f14c198e607a16ee99384ea}\label{classUser_a1924a7eb8f14c198e607a16ee99384ea} 
+void {\bfseries update\+Stats} ()
+\begin{DoxyCompactList}\small\item\em Updates the user\textquotesingle{}s statistics and metals. Must be run each time after changes are made to the stats map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUser_afaa554238d43dfceaad17340120b5db1}\label{classUser_afaa554238d43dfceaad17340120b5db1} 
+map$<$ string, string $>$ {\bfseries stats}
+\item 
+\Hypertarget{classUser_a8fd1c6311f638188e99d74d11ae85037}\label{classUser_a8fd1c6311f638188e99d74d11ae85037} 
+string {\bfseries metals}
+\item 
+\Hypertarget{classUser_a643f85779a4693855c171c396f49e515}\label{classUser_a643f85779a4693855c171c396f49e515} 
+string {\bfseries name}
+\item 
+\Hypertarget{classUser_a6ded3e947d259bb6d1aa4b7a6357b545}\label{classUser_a6ded3e947d259bb6d1aa4b7a6357b545} 
+int {\bfseries exp}
+\item 
+\Hypertarget{classUser_a8cbc91e75638693a342e04adad90ae2b}\label{classUser_a8cbc91e75638693a342e04adad90ae2b} 
+int {\bfseries exp\+Threshold}
+\item 
+\Hypertarget{classUser_ae5bca0ae08313a918960d475c5a5f450}\label{classUser_ae5bca0ae08313a918960d475c5a5f450} 
+int {\bfseries level}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing user object which holds a user\textquotesingle{}s statistics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUser_ab4d18a829f31eae091669ac36782a396}\label{classUser_ab4d18a829f31eae091669ac36782a396} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classUser}{User} object constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string name of the user. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUser_a10cd375d1fd3c784e459af0f8d9f8852}\label{classUser_a10cd375d1fd3c784e459af0f8d9f8852} 
+\index{User@{User}!addEXP@{addEXP}}
+\index{addEXP@{addEXP}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addEXP()}{addEXP()}}
+{\footnotesize\ttfamily void User\+::add\+EXP (\begin{DoxyParamCaption}\item[{double}]{exp }\end{DoxyParamCaption})}
+
+
+
+Increments the user\textquotesingle{}s experince by the ammount and levels them up if they are above the threashold for a level up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp} & experince to add to the user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_a123a8c9e05dc1d86a4469fb2d4e127eb}\label{classUser_a123a8c9e05dc1d86a4469fb2d4e127eb} 
+\index{User@{User}!getEXP@{getEXP}}
+\index{getEXP@{getEXP}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEXP()}{getEXP()}}
+{\footnotesize\ttfamily int User\+::get\+EXP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for exp. 
+
+\begin{DoxyReturn}{Returns}
+user\textquotesingle{}s experince. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a6bebac9cf3e91406a6362afa0bfa866b}\label{classUser_a6bebac9cf3e91406a6362afa0bfa866b} 
+\index{User@{User}!getEXPThreshold@{getEXPThreshold}}
+\index{getEXPThreshold@{getEXPThreshold}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEXPThreshold()}{getEXPThreshold()}}
+{\footnotesize\ttfamily int User\+::get\+EXPThreshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the exp required for the next level. 
+
+\begin{DoxyReturn}{Returns}
+exp threshold. 
+\end{DoxyReturn}
+\Hypertarget{classUser_af335ecb5afa53559cca5f42d17aeed66}\label{classUser_af335ecb5afa53559cca5f42d17aeed66} 
+\index{User@{User}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int User\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for user\textquotesingle{}s level. 
+
+\begin{DoxyReturn}{Returns}
+user\textquotesingle{}s level. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a825cd0c8f5df716216c50ea274bd32d9}\label{classUser_a825cd0c8f5df716216c50ea274bd32d9} 
+\index{User@{User}!getMetals@{getMetals}}
+\index{getMetals@{getMetals}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getMetals()}{getMetals()}}
+{\footnotesize\ttfamily string User\+::get\+Metals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for user\textquotesingle{}s metals. 
+
+\begin{DoxyReturn}{Returns}
+vector of all the users metals. 
+\end{DoxyReturn}
+\Hypertarget{classUser_adb316ac38d5f62a967686e7b736a0469}\label{classUser_adb316ac38d5f62a967686e7b736a0469} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for user\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+user\textquotesingle{}s name. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a04fd4cac1189c003704db15f6f6da277}\label{classUser_a04fd4cac1189c003704db15f6f6da277} 
+\index{User@{User}!getStats@{getStats}}
+\index{getStats@{getStats}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily map$<$ string, string $>$ \texorpdfstring{$\ast$}{*} User\+::get\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for stats map. 
+
+\begin{DoxyReturn}{Returns}
+stats map. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

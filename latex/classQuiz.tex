@@ -1,0 +1,122 @@
+\doxysection{Quiz Class Reference}
+\hypertarget{classQuiz}{}\label{classQuiz}\index{Quiz@{Quiz}}
+
+
+Class containing quiz object which represents a collection of question which can be answered.  
+
+
+
+
+{\ttfamily \#include $<$Quiz.\+h$>$}
+
+
+
+Collaboration diagram for Quiz\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQuiz_a4f37c21b447b9df1f94a4ddd671bb615}{Quiz}} (vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$ questions, \mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}user)
+\begin{DoxyCompactList}\small\item\em \doxylink{classQuiz}{Quiz} object constructor. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classQuiz_a4e809c57e698535ff01ea47d2c93a8ef}{get\+Questions}} ()
+\begin{DoxyCompactList}\small\item\em Getter for questions vector. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classQuiz_a3d5a7c578e2af82d11484f93884f8c6d}{submit\+Answer}} (int question\+Idx, int answer\+Idx)
+\begin{DoxyCompactList}\small\item\em Submit an answer to a question in the quiz. \end{DoxyCompactList}\item 
+\Hypertarget{classQuiz_a0a95d0deec7595f6fa70608542d36d7f}\label{classQuiz_a0a95d0deec7595f6fa70608542d36d7f} 
+void {\bfseries update\+User\+Stats} ()
+\begin{DoxyCompactList}\small\item\em Update the user object\textquotesingle{}s stats map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classQuiz_a7ec611b9d1618de29e65919062a2242c}\label{classQuiz_a7ec611b9d1618de29e65919062a2242c} 
+vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries questions}
+\item 
+\Hypertarget{classQuiz_addfea9ebdbb11025078d87a7c405880e}\label{classQuiz_addfea9ebdbb11025078d87a7c405880e} 
+vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries questions\+Correct}
+\item 
+\Hypertarget{classQuiz_a422fb84076e3ee82145101e5f7f74259}\label{classQuiz_a422fb84076e3ee82145101e5f7f74259} 
+\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*} {\bfseries user}
+\item 
+\Hypertarget{classQuiz_ad87761ba30e29e4723e60cad242561a9}\label{classQuiz_ad87761ba30e29e4723e60cad242561a9} 
+int {\bfseries score}
+\item 
+\Hypertarget{classQuiz_a37490a0461ed9aff0a05dfac4a1f9851}\label{classQuiz_a37490a0461ed9aff0a05dfac4a1f9851} 
+int {\bfseries answered}
+\item 
+\Hypertarget{classQuiz_a53f356d6a956e6f592ccc929090e0c67}\label{classQuiz_a53f356d6a956e6f592ccc929090e0c67} 
+int {\bfseries answered\+Correctly}
+\item 
+\Hypertarget{classQuiz_a566c3d5643f791f21a636a256aec0dd1}\label{classQuiz_a566c3d5643f791f21a636a256aec0dd1} 
+int {\bfseries streak}
+\item 
+\Hypertarget{classQuiz_a0049c98932b20b39fd522c026513e8da}\label{classQuiz_a0049c98932b20b39fd522c026513e8da} 
+int {\bfseries max\+Streak}
+\item 
+\Hypertarget{classQuiz_ac942fb22860012ba0b40dbee2a7848d1}\label{classQuiz_ac942fb22860012ba0b40dbee2a7848d1} 
+int {\bfseries exp\+Gained}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing quiz object which represents a collection of question which can be answered. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classQuiz_a4f37c21b447b9df1f94a4ddd671bb615}\label{classQuiz_a4f37c21b447b9df1f94a4ddd671bb615} 
+\index{Quiz@{Quiz}!Quiz@{Quiz}}
+\index{Quiz@{Quiz}!Quiz@{Quiz}}
+\doxysubsubsection{\texorpdfstring{Quiz()}{Quiz()}}
+{\footnotesize\ttfamily Quiz\+::\+Quiz (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$}]{questions,  }\item[{\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}}]{user }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classQuiz}{Quiz} object constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em questions} & vector of questions to be used in the quiz \\
+\hline
+{\em user} & current user \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classQuiz_a4e809c57e698535ff01ea47d2c93a8ef}\label{classQuiz_a4e809c57e698535ff01ea47d2c93a8ef} 
+\index{Quiz@{Quiz}!getQuestions@{getQuestions}}
+\index{getQuestions@{getQuestions}!Quiz@{Quiz}}
+\doxysubsubsection{\texorpdfstring{getQuestions()}{getQuestions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classQuestion}{Question}} \texorpdfstring{$\ast$}{*} $>$ Quiz\+::get\+Questions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for questions vector. 
+
+\begin{DoxyReturn}{Returns}
+questions vector 
+\end{DoxyReturn}
+\Hypertarget{classQuiz_a3d5a7c578e2af82d11484f93884f8c6d}\label{classQuiz_a3d5a7c578e2af82d11484f93884f8c6d} 
+\index{Quiz@{Quiz}!submitAnswer@{submitAnswer}}
+\index{submitAnswer@{submitAnswer}!Quiz@{Quiz}}
+\doxysubsubsection{\texorpdfstring{submitAnswer()}{submitAnswer()}}
+{\footnotesize\ttfamily string Quiz\+::submit\+Answer (\begin{DoxyParamCaption}\item[{int}]{question\+Idx,  }\item[{int}]{answer\+Idx }\end{DoxyParamCaption})}
+
+
+
+Submit an answer to a question in the quiz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em question\+Idx} & index of the question being answered \\
+\hline
+{\em answer\+Idx} & index of the given answer to the question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string to be shown to the user after answering the question. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Quiz.\+h\item 
+Quiz.\+cpp\end{DoxyCompactItemize}

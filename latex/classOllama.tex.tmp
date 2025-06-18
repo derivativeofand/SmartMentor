@@ -1,0 +1,122 @@
+\doxysection{Ollama Class Reference}
+\hypertarget{classOllama}{}\label{classOllama}\index{Ollama@{Ollama}}
+
+
+Collaboration diagram for Ollama\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classOllama_a47f612d91712007290832daf7d8c1897}\label{classOllama_a47f612d91712007290832daf7d8c1897} 
+{\bfseries Ollama} (const std\+::string \&url)
+\item 
+\Hypertarget{classOllama_adc231cd412badeb70c95533b2c819caa}\label{classOllama_adc231cd412badeb70c95533b2c819caa} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries generate} (const std\+::string \&model, const std\+::string \&prompt, const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&context, const json \&options=nullptr, const std\+::vector$<$ std\+::string $>$ \&images=std\+::vector$<$ std\+::string $>$())
+\item 
+\Hypertarget{classOllama_a3a0ab7ddea2e608bf1d82edcdbcf1609}\label{classOllama_a3a0ab7ddea2e608bf1d82edcdbcf1609} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries generate} (const std\+::string \&model, const std\+::string \&prompt, const json \&options=nullptr, const std\+::vector$<$ std\+::string $>$ \&images=std\+::vector$<$ std\+::string $>$())
+\item 
+\Hypertarget{classOllama_ab99a935fabe82aa14869354cbb7f37c1}\label{classOllama_ab99a935fabe82aa14869354cbb7f37c1} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries generate} (\mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} \&request)
+\item 
+\Hypertarget{classOllama_a77586b81b6a902ca0da7ed61c846ac2f}\label{classOllama_a77586b81b6a902ca0da7ed61c846ac2f} 
+bool {\bfseries generate} (const std\+::string \&model, const std\+::string \&prompt, \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&context, std\+::function$<$ bool(const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&)$>$ on\+\_\+receive\+\_\+token, const json \&options=nullptr, const std\+::vector$<$ std\+::string $>$ \&images=std\+::vector$<$ std\+::string $>$())
+\item 
+\Hypertarget{classOllama_a5c0fc6167f18c84092128ec7dbb9d2fc}\label{classOllama_a5c0fc6167f18c84092128ec7dbb9d2fc} 
+bool {\bfseries generate} (const std\+::string \&model, const std\+::string \&prompt, std\+::function$<$ bool(const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&)$>$ on\+\_\+receive\+\_\+token, const json \&options=nullptr, const std\+::vector$<$ std\+::string $>$ \&images=std\+::vector$<$ std\+::string $>$())
+\item 
+\Hypertarget{classOllama_ab55f687c05c89c8ac88d47e1fd8df6da}\label{classOllama_ab55f687c05c89c8ac88d47e1fd8df6da} 
+bool {\bfseries generate} (\mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} \&request, std\+::function$<$ bool(const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&)$>$ on\+\_\+receive\+\_\+token)
+\item 
+\Hypertarget{classOllama_a67d15264a3d63b7a60b3ddcfea4759cf}\label{classOllama_a67d15264a3d63b7a60b3ddcfea4759cf} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries chat} (const std\+::string \&model, const \mbox{\hyperlink{classollama_1_1messages}{ollama\+::messages}} \&messages, json options=nullptr, const std\+::string \&format="{}json"{}, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\item 
+\Hypertarget{classOllama_a6d6f3931b190ce777e3aea983fa72caf}\label{classOllama_a6d6f3931b190ce777e3aea983fa72caf} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries chat} (\mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} \&request)
+\item 
+\Hypertarget{classOllama_a056df00075f4025f718b08d442b61abb}\label{classOllama_a056df00075f4025f718b08d442b61abb} 
+bool {\bfseries chat} (const std\+::string \&model, const \mbox{\hyperlink{classollama_1_1messages}{ollama\+::messages}} \&messages, std\+::function$<$ bool(const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&)$>$ on\+\_\+receive\+\_\+token, const json \&options=nullptr, const std\+::string \&format="{}json"{}, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\item 
+\Hypertarget{classOllama_abdd49801920797428a5df9b4d8187b11}\label{classOllama_abdd49801920797428a5df9b4d8187b11} 
+bool {\bfseries chat} (\mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} \&request, std\+::function$<$ bool(const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&)$>$ on\+\_\+receive\+\_\+token)
+\item 
+\Hypertarget{classOllama_a34be947a73c7052f8d8703c04e18169c}\label{classOllama_a34be947a73c7052f8d8703c04e18169c} 
+bool {\bfseries create\+\_\+model} (const std\+::string \&model\+Name, const std\+::string \&model\+File, bool load\+From\+File=true)
+\item 
+\Hypertarget{classOllama_a7c6cd81632bee837c9e22c2f79b4beb4}\label{classOllama_a7c6cd81632bee837c9e22c2f79b4beb4} 
+bool {\bfseries load\+\_\+model} (const std\+::string \&model)
+\item 
+\Hypertarget{classOllama_acd655eec3587ef78d8dde626049900ad}\label{classOllama_acd655eec3587ef78d8dde626049900ad} 
+bool {\bfseries is\+\_\+running} ()
+\item 
+\Hypertarget{classOllama_ae47fab48033e89386efc68b8f733214e}\label{classOllama_ae47fab48033e89386efc68b8f733214e} 
+json {\bfseries list\+\_\+model\+\_\+json} ()
+\item 
+\Hypertarget{classOllama_ab6c2a3a755e10756bd9e073b00a189e6}\label{classOllama_ab6c2a3a755e10756bd9e073b00a189e6} 
+std\+::vector$<$ std\+::string $>$ {\bfseries list\+\_\+models} ()
+\item 
+\Hypertarget{classOllama_a98dd82d1507a12678600996c7cc56396}\label{classOllama_a98dd82d1507a12678600996c7cc56396} 
+json {\bfseries running\+\_\+model\+\_\+json} ()
+\item 
+\Hypertarget{classOllama_a4cac7086c65412f44d1a3a2264185aa0}\label{classOllama_a4cac7086c65412f44d1a3a2264185aa0} 
+std\+::vector$<$ std\+::string $>$ {\bfseries list\+\_\+running\+\_\+models} ()
+\item 
+\Hypertarget{classOllama_afe495d4466c763512cda66b42f64ba1e}\label{classOllama_afe495d4466c763512cda66b42f64ba1e} 
+bool {\bfseries blob\+\_\+exists} (const std\+::string \&digest)
+\item 
+\Hypertarget{classOllama_a4714b00b9e095538bdefbfe876da6267}\label{classOllama_a4714b00b9e095538bdefbfe876da6267} 
+bool {\bfseries create\+\_\+blob} (const std\+::string \&digest)
+\item 
+\Hypertarget{classOllama_ac547fc643e9bc9ddb320fe5f55d2ee50}\label{classOllama_ac547fc643e9bc9ddb320fe5f55d2ee50} 
+json {\bfseries show\+\_\+model\+\_\+info} (const std\+::string \&model, bool verbose=false)
+\item 
+\Hypertarget{classOllama_af55cdbe19bb56abf44304bf3f985e59e}\label{classOllama_af55cdbe19bb56abf44304bf3f985e59e} 
+bool {\bfseries copy\+\_\+model} (const std\+::string \&source\+\_\+model, const std\+::string \&dest\+\_\+model)
+\item 
+\Hypertarget{classOllama_acdb1edd0545ddfb195e0857193fbc205}\label{classOllama_acdb1edd0545ddfb195e0857193fbc205} 
+bool {\bfseries delete\+\_\+model} (const std\+::string \&model)
+\item 
+\Hypertarget{classOllama_a630233a6c980a9a975f884cac689495a}\label{classOllama_a630233a6c980a9a975f884cac689495a} 
+bool {\bfseries pull\+\_\+model} (const std\+::string \&model, bool allow\+\_\+insecure=false)
+\item 
+\Hypertarget{classOllama_ae5e6b628a6c2566d660769208e78128d}\label{classOllama_ae5e6b628a6c2566d660769208e78128d} 
+bool {\bfseries push\+\_\+model} (const std\+::string \&model, bool allow\+\_\+insecure=false)
+\item 
+\Hypertarget{classOllama_ac8920a5761f608b87b00210fc06c91d6}\label{classOllama_ac8920a5761f608b87b00210fc06c91d6} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries generate\+\_\+embeddings} (const std\+::string \&model, const std\+::string \&input, const json \&options=nullptr, bool truncate=true, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\item 
+\Hypertarget{classOllama_ae17e74a9ddabea0985ad28f1db0f84a5}\label{classOllama_ae17e74a9ddabea0985ad28f1db0f84a5} 
+\mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} {\bfseries generate\+\_\+embeddings} (\mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} \&request)
+\item 
+\Hypertarget{classOllama_af8d2de08b30fd6c5f36336de28135ee4}\label{classOllama_af8d2de08b30fd6c5f36336de28135ee4} 
+std\+::string {\bfseries get\+\_\+version} ()
+\item 
+\Hypertarget{classOllama_a7c86ce14db97ecabf9cc9951ac5b8e74}\label{classOllama_a7c86ce14db97ecabf9cc9951ac5b8e74} 
+void {\bfseries set\+Server\+URL} (const std\+::string \&server\+\_\+url)
+\item 
+\Hypertarget{classOllama_acb93d8cfe841ed914953c68259dc1839}\label{classOllama_acb93d8cfe841ed914953c68259dc1839} 
+void {\bfseries set\+Read\+Timeout} (const int seconds)
+\item 
+\Hypertarget{classOllama_a8bdbc2117ccef29116404f2faf7cba80}\label{classOllama_a8bdbc2117ccef29116404f2faf7cba80} 
+void {\bfseries set\+Write\+Timeout} (const int seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classOllama_ab141c5a7ccc26e3641b8ed9d54872f2e}\label{classOllama_ab141c5a7ccc26e3641b8ed9d54872f2e} 
+using {\bfseries json} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classOllama_ac88fa6891c8afa123768a267b5db262f}\label{classOllama_ac88fa6891c8afa123768a267b5db262f} 
+std\+::string {\bfseries server\+\_\+url}
+\item 
+\Hypertarget{classOllama_ace20c715e6578e0ae047457c5032df5e}\label{classOllama_ace20c715e6578e0ae047457c5032df5e} 
+\mbox{\hyperlink{classhttplib_1_1Client}{httplib\+::\+Client}} \texorpdfstring{$\ast$}{*} {\bfseries cli}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ollama.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{ollama\+::response Class Reference}
+\hypertarget{classollama_1_1response}{}\label{classollama_1_1response}\index{ollama::response@{ollama::response}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1response_a16be51371d589265b5f1e062894c5295}\label{classollama_1_1response_a16be51371d589265b5f1e062894c5295} 
+{\bfseries response} (const std\+::string \&json\+\_\+string, message\+\_\+type type=message\+\_\+type\+::generation)
+\item 
+\Hypertarget{classollama_1_1response_a770528f8a731f986e207cb85d26b7900}\label{classollama_1_1response_a770528f8a731f986e207cb85d26b7900} 
+bool {\bfseries is\+\_\+valid} () const
+\item 
+\Hypertarget{classollama_1_1response_a7e50207759d3202f572c6c265506be42}\label{classollama_1_1response_a7e50207759d3202f572c6c265506be42} 
+const std\+::string \& {\bfseries as\+\_\+json\+\_\+string} () const
+\item 
+\Hypertarget{classollama_1_1response_a556e1f6b575c4e7da50913f9a7aec852}\label{classollama_1_1response_a556e1f6b575c4e7da50913f9a7aec852} 
+const json \& {\bfseries as\+\_\+json} () const
+\item 
+\Hypertarget{classollama_1_1response_a038ed4dd1b906ca343b777efaa32be27}\label{classollama_1_1response_a038ed4dd1b906ca343b777efaa32be27} 
+const std\+::string \& {\bfseries as\+\_\+simple\+\_\+string} () const
+\item 
+\Hypertarget{classollama_1_1response_a3359194e2b6730916a6380bd901b3394}\label{classollama_1_1response_a3359194e2b6730916a6380bd901b3394} 
+bool {\bfseries has\+\_\+error} () const
+\item 
+\Hypertarget{classollama_1_1response_a048611daff62e9adcec289c66a457684}\label{classollama_1_1response_a048611daff62e9adcec289c66a457684} 
+const std\+::string \& {\bfseries get\+\_\+error} () const
+\item 
+\Hypertarget{classollama_1_1response_ac6f31a083a5b405fc3abb3abc784e8f8}\label{classollama_1_1response_ac6f31a083a5b405fc3abb3abc784e8f8} 
+const message\+\_\+type \& {\bfseries get\+\_\+type} () const
+\item 
+\Hypertarget{classollama_1_1response_a3efa6835a737a8d3dc41be19ee02e66a}\label{classollama_1_1response_a3efa6835a737a8d3dc41be19ee02e66a} 
+{\bfseries operator std\+::\+\_\+\+\_\+cxx11\+::basic\+\_\+string$<$ char $>$} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1response_ac3745c627eaeea64b692944c2bf615d0}\label{classollama_1_1response_ac3745c627eaeea64b692944c2bf615d0} 
+std\+::string {\bfseries json\+\_\+string}
+\item 
+\Hypertarget{classollama_1_1response_a26ce1136fbeec9183fd454df82bf5437}\label{classollama_1_1response_a26ce1136fbeec9183fd454df82bf5437} 
+std\+::string {\bfseries simple\+\_\+string}
+\item 
+\Hypertarget{classollama_1_1response_ab5379b88aed7f52be10be2daeac93309}\label{classollama_1_1response_ab5379b88aed7f52be10be2daeac93309} 
+std\+::string {\bfseries error\+\_\+string}
+\item 
+\Hypertarget{classollama_1_1response_ad2f347784bdf3204a4d6909f3d1d1949}\label{classollama_1_1response_ad2f347784bdf3204a4d6909f3d1d1949} 
+json {\bfseries json\+\_\+data}
+\item 
+\Hypertarget{classollama_1_1response_a38412a405961b97112fac291e1e39df5}\label{classollama_1_1response_a38412a405961b97112fac291e1e39df5} 
+message\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{classollama_1_1response_a236e1c2b193543b9381bd6d8d41c36f7}\label{classollama_1_1response_a236e1c2b193543b9381bd6d8d41c36f7} 
+bool {\bfseries valid}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1response_a7fe71590d05cd86b0e55689f2a3f0ac9}\label{classollama_1_1response_a7fe71590d05cd86b0e55689f2a3f0ac9} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classollama_1_1response}{ollama\+::response}} \&\mbox{\hyperlink{classollama_1_1response}{response}})
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ollama.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\doxysection{Question.\+h}
+\hypertarget{Question_8h_source}{}\label{Question_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <format>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ QUESTION\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ QUESTION\_H}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classQuestion}{Question}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classQuestion}{Question}}(\textcolor{keywordtype}{string}\ questionText,\ vector<string>\ answers,\ \textcolor{keywordtype}{int}\ correctAnswerIdx,\ \textcolor{keywordtype}{int}\ difficulty,\ \textcolor{keywordtype}{string}\ category);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQuestion_a02f67afa0cd2cb1431fe6c3fc53a09d2}{submitAnswer}}(\textcolor{keywordtype}{int}\ answerIdx);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classQuestion_a5b5c1c3956826b79865ee1cf678e6d0d}{getQuestionStr}}();}
+\DoxyCodeLine{00020\ \ \ \ \ vector<string>\ \mbox{\hyperlink{classQuestion_aab1a344c5c09746ab30dcb263bfdc489}{getAnswers}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classQuestion_a08d0fb4b8b54ae30642ed24aa09039e7}{getCorrectAnswerIdx}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classQuestion_a75e718432c02cecd50c662b3be82ec83}{getDifficulty}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classQuestion_a068ab9198e1227e8b831b70d368fa1d8}{getCategory}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classQuestion_ac658f83af85b937a4d894399b1b92c08}{toString}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{string}\ questionText;}
+\DoxyCodeLine{00028\ \ \ \ \ vector<string>\ answers;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ correctAnswerIdx;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ difficulty;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ category;}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

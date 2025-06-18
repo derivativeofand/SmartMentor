@@ -1,0 +1,45 @@
+\doxysection{ollama\+::request Class Reference}
+\hypertarget{classollama_1_1request}{}\label{classollama_1_1request}\index{ollama::request@{ollama::request}}
+
+
+Inheritance diagram for ollama\+::request\+:
+% FIG 0
+
+
+Collaboration diagram for ollama\+::request\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1request_aca784a3bbf5d382e9694d6796d063088}\label{classollama_1_1request_aca784a3bbf5d382e9694d6796d063088} 
+{\bfseries request} (const std\+::string \&model, const std\+::string \&prompt, const json \&\mbox{\hyperlink{classollama_1_1options}{options}}=nullptr, bool stream=false, const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classollama_1_1images}{images}}=std\+::vector$<$ std\+::string $>$())
+\item 
+\Hypertarget{classollama_1_1request_adf73b9f542ab84d46a751ef031c86f3e}\label{classollama_1_1request_adf73b9f542ab84d46a751ef031c86f3e} 
+{\bfseries request} (const std\+::string \&model, const \mbox{\hyperlink{classollama_1_1messages}{ollama\+::messages}} \&\mbox{\hyperlink{classollama_1_1messages}{messages}}, const json \&\mbox{\hyperlink{classollama_1_1options}{options}}=nullptr, bool stream=false, const std\+::string \&format="{}json"{}, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\item 
+\Hypertarget{classollama_1_1request_a760c6be625b279c5a19991d02a796661}\label{classollama_1_1request_a760c6be625b279c5a19991d02a796661} 
+{\bfseries request} (const std\+::string \&model, const \mbox{\hyperlink{classollama_1_1message}{ollama\+::message}} \&\mbox{\hyperlink{classollama_1_1message}{message}}, const json \&\mbox{\hyperlink{classollama_1_1options}{options}}=nullptr, bool stream=false, const std\+::string \&format="{}json"{}, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\item 
+\Hypertarget{classollama_1_1request_af2d04f5cc025a3dfbbe549f3d14f0446}\label{classollama_1_1request_af2d04f5cc025a3dfbbe549f3d14f0446} 
+{\bfseries request} (message\+\_\+type type)
+\item 
+\Hypertarget{classollama_1_1request_a96da270953d09a358b0cd47071d49940}\label{classollama_1_1request_a96da270953d09a358b0cd47071d49940} 
+const message\+\_\+type \& {\bfseries get\+\_\+type} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1request_a9f2d148505f3e0a7f68ccd68a96edfa8}\label{classollama_1_1request_a9f2d148505f3e0a7f68ccd68a96edfa8} 
+static \mbox{\hyperlink{classollama_1_1request}{ollama\+::request}} {\bfseries from\+\_\+embedding} (const std\+::string \&model, const std\+::string \&input, const json \&\mbox{\hyperlink{classollama_1_1options}{options}}=nullptr, bool truncate=true, const std\+::string \&keep\+\_\+alive\+\_\+duration="{}5m"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classollama_1_1request_a67b8e93cad311e377d4c40f8ca9aa35b}\label{classollama_1_1request_a67b8e93cad311e377d4c40f8ca9aa35b} 
+message\+\_\+type {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ollama.\+hpp\end{DoxyCompactItemize}
